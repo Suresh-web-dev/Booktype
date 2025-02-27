@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookType</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navi">
+            <h1>BookType</h1>
+        </nav>
+
+    <div class="container">
+        <div class="story">
+            <h2>The Night Circus</h2>
+            <h3>Erin Morgenstern</h3>
+            <p>Step into a world of wonder and illusion in The Night Circus, a spellbinding tale of magic, love, and destiny. The mysterious black-and-white Le Cirque des Rêves arrives without warning, enchanting visitors with its breathtaking, otherworldly performances. But behind the scenes, a secret competition is unfolding between two young illusionists, Celia and Marco, bound by a powerful, dangerous challenge set by their mentors.</p>
+            <button onclick="inner_delete(event)">Delete</button>
+        </div>
+    </div>
+    <button id="main_button">+</button>
+    
+
+    <div class="overlay"></div>
+
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <div class="form">
+            <input type="text" placeholder="Title" id="book_title">
+            <input type="text" placeholder="Author" id="book_author">
+            <textarea placeholder="Description" id="book_description"></textarea><br>
+            <button id="cancel_button">cancel</button>
+            <button id="add_button">add</button>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+    
+</body>
+</html>
